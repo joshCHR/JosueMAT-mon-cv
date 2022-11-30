@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JOSUE MATANDIKO - Mon Porfolio</title>
+
+		<link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/favicons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicons/favicon-16x16.png" />
+		<link rel="manifest" href="./assets/icons/favicons/site.webmanifest" />
+		<link rel="mask-icon" href="./assets/icons/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#2b5797" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<meta property="og:image" content="./assets/icons/pic1.png" />
+
+		<meta name="twitter:image" content="./assets/icons/pic1.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="stylesheet" href="./src/styles/main.css" />
+
+		<script src="./src/polyfils/safari-module.js"></script>
+		<script src="./src/js/main.js" defer type="module"></script>
+		<style>
+			#scroll-progress {
+				position: fixed;
+				top: 0;
+				width: 0%;
+				height: 6px;
+				background: #7e74f1;
+				z-index: 10000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="overlay"></div>
+		<div id="scroll-progress"></div>
+		<div class="app">
+			<!-- NAVBAR -->
+			<section class="navbar">
+				<div class="container">
+					<div class="logo">
+						<span> <a href="#banner">JOSUE MAT</a> </span>
+					</div>
+					<div class="menu" id="menu">
+						<ul>
+							<li><a href="#competences">Compétences</a></li>
+							<li><a href="#formations">Formations</a></li>
+							<li><a href="#experiences">Experiences</a></li>
+							<li><a href="#contacts" id="contactsScroll">Contacts</a></li>
+						</ul>
+					</div>
+					<div style="display: flex">
+						<div class="button">
+							<span> <img src="./assets/icons/mod.svg" alt="" id="icon" /> </span>
+							<span> <a href="#" class="btn btn-primary" alt="Télécharger mon CV">Mon CV</a> </span>
+						</div>
+
+						<div class="menu-mobile" id="menu-mobile">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- BANNER -->
+			<section class="banner animated-on-scroll" id="banner">
+				<div class="container">
+					<div class="text">
+						<span class="subtitle">Bienvenue</span>
+						<h1>Bienvenue sur <span>mon Portfolio.</span></h1>
+						<p>Une brève bio par ex : Développeur logiciel passionné, spécialisé dans des App Desktop et conceptin de système d'information informatisé (sites web).</p>
+						<div class="button">
+							<span> <a href="/pdf mon CV josue/cv josh.pdf" download="Mon-CV" class="btn btn-primary" alt="Télécharger mon CV">Mon CV</a> </span>
+							<span>
+								<ul>
+									<li>
+										<a href="https://github.com/joshCHR" target="_blank" rel="noopener noreferrer">
+											<img src="./assets/icons/Github.svg" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/josue-matandiko-914a55258/" target="_blank" rel="noopener noreferrer">
+											<img src="./assets/icons/Linkedin.svg" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/JosueMatandiko" target="_blank" rel="noopener noreferrer">
+											<img src="./assets/icons/Twitter.svg" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/josh.com55/" target="_blank" rel="noopener noreferrer">
+											<img src="./assets/icons/Instagram.svg" alt="" />
+										</a>
+									</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+					<div class="img">
+						<img class="bg" src="./assets/icons/pic1.png" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<!-- COMPETENCES -->
+			<section class="competences" id="competences">
+				<div class="container">
+					<div style="width: 100%">
+						<div class="animated-on-scroll title">
+							<span>Services</span>
+							<h2>Mes compétences</h2>
+						</div>
+						<div class="animated-on-scroll data-competences"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- FORMATIONS -->
+			<section class="formations" id="formations">
+				<div class="container">
+					<div style="width: 100%">
+						<div class="animated-on-scroll title left">
+							<span>Formations</span>
+							<h2>Mes formations</h2>
+						</div>
+
+						<div class="data-formations">
+							<div class="animated-on-scroll timeline-list">
+								<div class="block">
+									<h3>INSTITUT SUPERIEUR D'INFORMATIQUE ET DE GESTION (ISIG-GOMA)</h3>
+									<p class="">INFORMATIQUE DE GESTION</p>
+									<span>2021 - 2025</span>
+								</div>
+								<div class="block">
+									<h3>INSTITUT FRANCAIS (if-GOMA)</h3>
+									<p class="">Formation en langage de programmation web</p>
+									<span>2022 - 2023</span>
+								</div>
+								<div class="block">
+									<h3>AUTRES CONNAISSANCE EN INFORMATIQUE</h3>
+									<p class="">Maintenance de système d’exploitation : tel que : Windows 7 et Windows 8 et Windows 10 pour les parties matérielles et immatériels 
+										Photo shop 
+										Logiciel SPSS : Traitement automatique des données
+										HTML et CSS pour la création de sites web
+										Concepteur de système d’information informatisé 
+										</p>
+									<span>2020 - 2022</span>
+								</div>
+							</div>
+							<div class="animated-on-scroll skills">
+								<p>Depuis plus de 1 an, j'apprends continuellement dans le domaine du front-end et j'expérimente de nouvelles technologies, frameworks et en Desktop et ici vous pouvez voir un résumé de mes compétences.</p>
+								<div class="skills-block">
+									<div class="skill-block">
+										<h3>HTML5 & CSS3</h3>
+										<div class="level level1"><div></div></div>
+									</div>
+									<div class="skill-block">
+										<h3>JavaScript</h3>
+										<div class="level level2"><div></div></div>
+									</div>
+
+									<div class="skill-block">
+										<h3>C#, SQL-Serveur</h3>
+										<div class="level level3"><div></div></div>
+									</div>
+									<div class="skill-block">
+										<h3>Excel, Word, PorwPoint et InernetExplore</h3>
+										<div class="level level4"><div></div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- EXPERIENCES -->
+			<section class="experiences" id="experiences">
+				<div class="container">
+					<div style="width: 100%">
+						<div class="animated-on-scroll title">
+							<span>Experiences</span>
+							<h2>Experiences profetionnelle</h2>
+						</div>
+						<div class="animated-on-scroll text">
+							<p>Plus d’infos dans mon CV, téléchargeable sur ce lien directement</p>
+							<p class="button">
+								<span> <a href="#" class="btn btn-primary" alt="Télécharger mon CV">Mon CV</a> </span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTACTS -->
+			<section class="contacts" id="contacts">
+				<div class="container">
+					<div class="animated-on-scroll" style="width: 100%">
+						<div class="title left">
+							<span>Langues</span>
+							<h2>Langues parlées</h2>
+						</div>
+
+						<div class="lang">
+							<h3>
+								Lingala
+								<div></div>
+							</h3>
+							<h3>
+								Francais
+								<div></div>
+							</h3>
+							<h3>Swahili</h3>
+						</div>
+					</div>
+					<div class="animated-on-scroll contacts-infos">
+						<div class="contact-infos">
+							<div class="icon">
+								<img src="./assets/icons/Icon-4.svg" alt="" />
+							</div>
+							<div class="text">
+								<h3>Addresse</h3>
+								<p>Goma, Katoyi </p>
+							</div>
+						</div>
+						<div class="contact-infos">
+							<div class="icon">
+								<img src="./assets/icons/Icon-5.svg" alt="" />
+							</div>
+							<div class="text">
+								<h3>Téléphone</h3>
+								<p><a target="_blank" href="https://api.whatsapp.com/send?phone=+243 975 778463&text="> +243 975 778463 </a></p>
+							</div>
+						</div>
+
+						<div class="contact-infos">
+							<div class="icon">
+								<img src="./assets/icons/Icon-3.svg" alt="" />
+							</div>
+							<div class="text">
+								<h3>Email</h3>
+								<p>
+									<a href="matandikojosue61@gmail.com"> matandikojosue61@gmail.com </a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- FOOTER -->
+			<section class="footer">
+				<div class="container">
+					<div style="width: 100%">
+						<footer class="animated-on-scroll">
+							<div>
+								<ul>
+									<li>
+										<a href="https://github.com/joshCHR" target="_blank" rel="noopener noreferrer">
+											<img src="./assets/icons/Github.svg" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/josue-matandiko-914a55258/" target="_blank" rel="noopener noreferrer">
+											<img src="./assets/icons/Linkedin.svg" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/JosueMatandiko" target="_blank" rel="noopener noreferrer">
+											<img src="./assets/icons/Twitter.svg" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/josh.com55/" target="_blank" rel="noopener noreferrer">
+											<img src="./assets/icons/Instagram.svg" alt="" />
+										</a>
+									</li>
+								</ul>
+
+								<div class="signature">
+									<span>© 2022 - JosueMAT Josh</span>
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
+
